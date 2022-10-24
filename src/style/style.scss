@@ -1,0 +1,110 @@
+html{
+  height: 100%;
+}
+body{
+  height: 10vw;
+  background: linear-gradient(to bottom, #ffffcc 0%, #ff99cc 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+button{
+  cursor: pointer;
+}
+.game{
+  position: absolute;
+  top: 55%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  padding: 15px;
+  background-color: rgb(75, 154, 191);
+  border-radius: 10px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-rows: 80px 80px 80px 80px;
+  border: 1px solid black;
+}
+.grid button{
+  background-color: floralwhite;
+  font-size: 24px;
+  font-weight: bold;
+  border: 1px solid gray;
+}
+.footer{
+  margin: 15px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer button{
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 3px;
+  width: 80px;
+  background: rgb(6, 176, 0);
+}
+.footer span{
+  flex: 1;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin: auto 0 auto 30px;
+}
+.message{
+  margin: 30px 0 0 0;
+  color: black;
+  height: 80px;
+}
+.btn{
+  width: 90px;
+  height: 30px;
+  background-color: green;
+  margin: 10px 0 0 0;
+  display: none;
+}
+
+.active{
+  display: block;
+}
+.hide{
+  display: none;
+}
+.best_scores{
+  margin: 20px 0 0 0;
+}
+.best{
+  width: 80px;
+  height: 60px;
+  background-color: aquamarine;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.main_page{
+  margin: 85px 0 0 0;
+  width: 80px;
+  height: 60px;
+  background-color: aquamarine;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.list{
+  padding: 40px 0 0 0;
+  text-align: center;
+  width: 320px;
+}
+.liContent{
+  font-size: 30px;
+  color: rgb(194, 79, 79);
+}
+
+@media (max-width: 380px) {
+  .grid{
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px 60px;
+    border: 1px solid black;
+}
+}
